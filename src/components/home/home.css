@@ -1,0 +1,384 @@
+
+
+.home-first-container{
+    padding-top: 20px;
+    position: relative;
+     
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-image: url('/public/images/multicultural.png');
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+}
+.home-first-container::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.596); /* Light visibility effect */
+    z-index: 1;
+}
+
+  
+  .home-content {
+    width: 50%;
+    margin: auto;
+    margin-top: 100px;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .home-content h1 {
+    font-size: 65px;
+    text-align: center;
+    color: #ffffff;
+    line-height: 1.2;
+    margin-bottom: 100px;
+  }
+  
+  .home-take-quiz button:hover {
+    background-color: #c71522;
+  }
+  
+  .home-second-container {
+    
+    margin-top: 60px;
+    text-align: center;
+    
+    padding: 30px 20px;
+  }
+  
+  .home-second-container h2 {
+    color: #e63946;
+    font-size: 35px;
+    margin-bottom: 20px;
+  }
+  
+  .home-second-container p {
+    margin-top: 15px;
+    font-size: 25px;
+    color: #000000ac;
+  }
+  
+
+  .home-third-container{
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    padding-top: 50px;
+    padding-bottom: 100px;
+  }
+
+  .home-third-info {
+    width: 60%;
+    
+    justify-content: center;
+    padding: 20px;
+  }
+
+  .home-third-container h3{
+    width: 70%;
+    margin: auto;
+    font-size: 30px;
+  }
+
+  .home-third-container p{
+    width: 70%;
+    margin: auto;
+    margin-top: 20px;
+    font-size: 20px;
+  }
+
+  .home-third-container a{
+    width: 70%;
+    margin: auto;
+    font-size: 20px;
+    color: #e63946;
+    text-decoration: underline;
+  }
+  .home-third-get-started-info{
+    width: 40%;
+    
+    padding: 20px;
+
+  }
+
+
+  .home-fourth-container{
+    width: 100%;
+    display: flex;
+    margin-bottom: 100px;
+  }
+  .home-fourth-container-photo{
+    width: 50%;
+    text-align: center;
+    padding: 30px;
+  }
+  .home-fourth-container-photo img{
+        width: 500px;
+        height: 300px;
+  }
+
+
+  .home-fourth-container-info{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px;
+  }
+
+  .home-fourth-container-info h2{
+    color: #e63946;
+  }
+
+  .survey-popup {
+    /* position: fixed; */
+   
+    width: 60%;
+  
+    /* max-width: 600px;  */
+    /* height: 450px;  */
+    margin: 50px auto; 
+    padding: 30px;
+    /* background-color: #ffffff; */
+    background-color: #242A31;
+
+    /* border: 1px solid #ddd; */
+    border-radius: 12px; 
+    /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);  */
+    /* box-shadow: 0px 4px 10px #dddddd17; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    align-items: center;
+    text-align: center;
+ 
+  }
+
+  
+  
+  
+  /* Close Button Style */
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  /* Fade-Up Animation */
+  @keyframes fadeUp {
+    from {
+      transform: translateY(100px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+.close-button {
+  position: absolute;
+  top: 0px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+
+
+.donut-chart-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 300px;
+  margin: 20px auto;
+  margin-bottom: 50px;
+ 
+}
+
+.doughnut-chart {
+  width: 100%;
+  height: 100%;
+}
+
+.score-text {
+  position: absolute;
+  text-align: center;
+
+  color: #333;
+  font-size: 10px;
+  margin-top: 30px;
+  font-weight: bold;
+}
+
+
+  /* Media Query for Tablets (max-width: 768px) */
+  @media screen and (max-width: 768px) {
+    .home-content {
+      width: 70%; /* Adjust content width */
+      margin-top: 50px;
+    }
+  
+    .home-content h1 {
+      font-size: 50px; /* Smaller font size */
+    }
+  
+    .home-take-quiz button {
+      padding: 15px 30px; /* Adjust button size */
+      font-size: 18px;
+    }
+  
+    .home-second-container {
+        
+      margin-top: 50px;
+    }
+  
+    .home-second-container h2 {
+      font-size: 30px; /* Reduce heading size */
+    }
+  
+    .home-second-container p {
+      font-size: 20px; /* Adjust paragraph size */
+    }
+
+    .home-third-container{
+        width: 90%;
+        display: block;
+        margin: auto;
+      }
+
+      .home-third-info {
+       
+       
+        padding: 0px;
+        padding-top: 30px;
+      }
+
+      .home-third-get-started-info{
+       
+        padding: 0px;
+        margin-top: 50px;
+        padding-top: 30px;
+      }
+
+      .home-third-container h3{
+        width: 100%;
+        margin: auto;
+        font-size: 20px;
+        padding: 0;
+        padding-top: 30px;
+      }
+    
+      .home-third-container p{
+        width: 100%;
+        margin: auto;
+        margin-top: 20px;
+        font-size: 15px;
+        padding: 0;
+        padding-top: 30px;
+      }
+      .survey-popup{
+        width: 100%;
+        box-sizing: border-box;
+      }
+
+      /* .survey-popup-content{
+        width: 100%;
+      } */
+
+
+      .home-fourth-container{
+        width: 100%;
+        display: block;
+        margin-bottom: 100px;
+      }
+
+      .home-fourth-container-photo{
+        padding: 0px;
+        width: 100%;
+      }
+
+      .home-fourth-container-photo img{
+        width: 300px;
+        height: 200px;
+      }
+      .home-fourth-container-info{
+        width: 80%;
+        padding: 0px;
+        margin: auto;
+      }
+
+      .home-fourth-container-info h2{
+        text-align: center;
+      }
+
+  }
+  
+  /* Media Query for Mobile Phones (max-width: 480px) */
+  @media screen and (max-width: 480px) {
+    body, html {
+      margin: 0;
+      padding: 0;
+    }
+  .home-first-container{
+    width: 100%;
+  }
+    .home-content {
+      width: 100%; /* Full-width on small screens */
+      margin-top: 30px;
+    
+    }
+  
+    .home-content h1 {
+      font-size: 36px; /* Smaller font size */
+      line-height: 1.3;
+    }
+  
+    .home-take-quiz button {
+      padding: 10px 20px; /* Compact button size */
+      font-size: 16px;
+    }
+  
+    .home-second-container {
+      margin-top: 40px;
+      padding: 20px 10px;
+    }
+  
+    .home-second-container h2 {
+      font-size: 25px; /* Reduce heading size */
+    }
+  
+    .home-second-container p {
+      font-size: 18px; /* Adjust paragraph size */
+    }
+    .home-third-info {
+        width: 100%;
+        text-align: center;
+        
+      }
+    
+      .home-third-get-started-info{
+        width: 100%;
+        text-align: center;
+       
+      }
+      .survey-popup{
+        width: 100%;
+      }
+  }
+  

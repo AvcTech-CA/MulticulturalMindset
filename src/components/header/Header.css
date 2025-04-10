@@ -1,0 +1,200 @@
+/* Import Font */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700&display=swap');
+
+/* Base Container Styles */
+.home-red-container,
+.home-yellow-container,
+.home-blue-container,
+.home-main-container {
+  padding: 10px 60px;
+  position: relative;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.home-red-container { background-color: #EA4D3F; }
+.home-yellow-container { background-color: #F7CE0B; }
+.home-blue-container { background-color: #2F8FCC; }
+.home-main-container { background-color: #3B4959; }
+
+/* Content Styles */
+.home-red-content,
+.home-yellow-content,
+.home-blue-content,
+.home-main-content {
+  width: 50%;
+  padding: 20px;
+  display: flex;
+  align-items: flex-end;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  color: #ffffff;
+}
+
+.home-red-content-info,
+.home-yellow-content-info,
+.home-blue-content-info,
+.home-main-content-info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+.home-red-content h1,
+.home-yellow-content h1,
+.home-blue-content h1,
+.home-main-content h1 {
+  font-size: clamp(2.5rem, 6vw, 5rem);
+  text-align: start;
+}
+
+.home-main-content h1 {
+  text-align: start;
+  margin-top: 135px;
+}
+
+.home-red-content h4,
+.home-yellow-content h4,
+.home-blue-content h4 {
+  font-size: 20px;
+  text-align: start;
+}
+
+.home-red-content p,
+.home-yellow-content p,
+.home-blue-content p {
+  font-size: 18px;
+  font-weight: 200;
+  color: #ffffff;
+  text-align: start;
+}
+
+/* Image Styles */
+.home-red-image,
+.home-yellow-image,
+.home-blue-image,
+.home-main-image {
+  width: 50%;
+  text-align: center;
+}
+
+.home-red-image img,
+.home-yellow-image img,
+.home-blue-image img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+
+.home-main-image img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  margin-top: 135px;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 1024px) {
+  .home-red-content,
+  .home-yellow-content,
+  .home-blue-content,
+  .home-main-content {
+    width: 60%;
+  }
+
+  .home-red-image img,
+  .home-yellow-image img,
+  .home-blue-image img,
+  .home-main-image img {
+    max-width: 300px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .home-red-container,
+  .home-yellow-container,
+  .home-blue-container,
+  .home-main-container {
+    flex-direction: column;
+    height: auto;
+    padding: 30px 20px;
+    text-align: center;
+  }
+
+  .home-red-content,
+  .home-yellow-content,
+  .home-blue-content,
+  .home-main-content {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .home-red-content-info,
+  .home-yellow-content-info,
+  .home-blue-content-info,
+  .home-main-content-info {
+    width: 100%;
+    margin: auto;
+  }
+
+  .home-red-image,
+  .home-yellow-image,
+  .home-blue-image,
+  .home-main-image {
+    width: 100%;
+    text-align: center;
+  }
+
+  .home-red-image img,
+  .home-yellow-image img,
+  .home-blue-image img,
+  .home-main-image img {
+    max-width: 250px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .home-red-container,
+  .home-yellow-container,
+  .home-blue-container,
+  .home-main-container {
+    padding: 20px;
+  }
+
+  .home-red-content h1,
+  .home-yellow-content h1,
+  .home-blue-content h1 {
+    font-size: clamp(1.8rem, 7vw, 2.5rem);
+  }
+
+  .home-main-content h1{
+    text-align: center;
+    font-size: clamp(1.8rem, 7vw, 2.5rem);
+    margin-top: 135px;
+  }
+
+  .home-red-content h4,
+  .home-yellow-content h4,
+  .home-blue-content h4 {
+    font-size: 18px;
+  }
+
+  .home-red-content p,
+  .home-yellow-content p,
+  .home-blue-content p {
+    font-size: 14px;
+  }
+
+  .home-red-image img,
+  .home-yellow-image img,
+  .home-blue-image img,
+  .home-main-image img {
+    max-width: 500px;
+  }
+}

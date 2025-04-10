@@ -1,0 +1,137 @@
+.section-form{
+    width: 100%;
+
+    
+}
+
+.section-form{
+    width: 100%;
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 30px;
+  
+}
+
+.section-form h3{
+  /* color: #f6cc0f */
+  color: #ffffff;
+}
+
+.section-form h4{
+  /* color: #f6cc0f */
+  color: #ffffff;
+}
+
+.section-form P{
+  color: #aaa
+
+}
+.section-form .styled-select{
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-family: 'Arial', sans-serif;
+    border: none;
+    border-bottom: 1px solid ;
+    border-radius: 0px;
+    background: #242A31;
+    appearance: none;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;}
+
+    .select-wrapper {
+        position: relative;
+        width: 100%;
+      }
+.styled-select {
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-family: 'Arial', sans-serif;
+    border: 1px solid #ccc;
+    color: #aaa;
+    border-radius: 8px;
+    background: #BABEC2;
+    appearance: none;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .styled-select:hover {
+    border-color: #007bff;
+  }
+  
+  .styled-select:focus {
+  
+    border-bottom-color: #007bff;
+    
+  }
+  
+  /* Add a chevron for better UI feedback */
+  .styled-select::-ms-expand {
+    display: none; /* Hides default dropdown arrow in IE */
+  }
+  
+  .select-wrapper::after {
+    content: '▼';
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: #999;
+    font-size: 14px;
+  }
+
+
+  .radio-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: #BABEC2;
+
+  }
+  
+  .radio-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  input[type="radio"] {
+    appearance: auto; /* Ensure the browser's native radio button style is used */
+    width: 20px;
+    height: 20px;
+  }
+  label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .section-form .check-box-container{
+    color: #aaa;
+  }
+ 
+  .check-box-container h4{
+    margin-bottom: 20px;
+
+  }
+
+  div{
+    margin-bottom: 20px;
+  }
+
+  .third-form-h3 h3{
+    color: #aaa;
+  }
+
+  .third-form-radio-button h3{
+    /* color: #f6cc0f; */
+    color: #ffffff;
+    margin-bottom: 25px;
+  }
